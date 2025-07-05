@@ -1,0 +1,10 @@
+[package]
+name = "starblox-tui"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+crossterm = "0.29.0"
+ratatui = "0.29.0"
+starblox-core = { path = "../core" }
+tokio = { version = "1.46.1", features = ["full"] }

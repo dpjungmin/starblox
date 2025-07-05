@@ -5,3 +5,12 @@ edition = "2024"
 license = "MIT OR Apache-2.0"
 repository  = "https://github.com/dpjungmin/starblox"
 description = "TUI e‑mail client"
+
+[workspace]
+members = [
+    ".",
+    "crates/core",
+    "crates/tui",
+]
+
+resolver = "2"
