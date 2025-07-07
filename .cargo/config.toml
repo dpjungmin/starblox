@@ -1,0 +1,4 @@
+[build]
+rustflags = [
+    "-Wunused-crate-dependencies",
+]

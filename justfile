@@ -11,19 +11,22 @@ clippy:
     cargo clippy --workspace --all-targets --all-features -- -D warnings
 
 fmt:
-    cargo fmt --all
+    cargo +nightly fmt --all
+
+sort:
+    cargo sort --workspace
 
 docs:
     cargo doc --workspace --open
 
 run:
-    cargo run -p starblox-tui
+    cargo run -p starblox
 
 test:
-    cargo test --workspace
+    cargo test -p starblox
 
 test-core:
     cargo test -p starblox-core
 
-test-tui:
-    cargo test -p starblox-tui
+tests:
+    cargo test --workspace
